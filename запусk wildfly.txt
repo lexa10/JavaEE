@@ -1,0 +1,20 @@
+
+
+
+
+И доказательство что я не филонил! 
+14:13:31,204 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 19.0.0.Beta3 (WildFly Core 11.0.0.Beta10) started in 43911ms - Started 418 of 647 services (379 services are lazy, passive or on-demand)
+14:22:04,608 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location C:\wildfly-19.0.0.Beta3\standalone\data\content\da\c954548fdf5fa59fadcaf0756e721a5249e971\content
+14:22:04,734 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 80) WFLYUT0022: Unregistered web context: '/JavaEE' from server 'default-server'
+14:22:04,762 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0028: Stopped deployment JavaEE.war (runtime-name: JavaEE.war) in 151ms
+14:22:04,764 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "JavaEE.war" (runtime-name: "JavaEE.war")
+14:22:04,885 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 80) WFLYUT0021: Registered web context: '/JavaEE' for server 'default-server'
+14:22:05,036 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0016: Replaced deployment "JavaEE.war" with deployment "JavaEE.war"
+14:22:05,036 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location C:\wildfly-19.0.0.Beta3\standalone\data\content\5b\3f5e844b16d3c4f70b8390bcd3bb545e687c64\content
+14:23:15,922 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location C:\wildfly-19.0.0.Beta3\standalone\data\content\a8\541675767ed7e1f7df9136ee1125b7208e2181\content
+14:23:15,932 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 83) WFLYUT0022: Unregistered web context: '/JavaEE' from server 'default-server'
+14:23:15,942 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0028: Stopped deployment JavaEE.war (runtime-name: JavaEE.war) in 13ms
+14:23:15,942 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "JavaEE.war" (runtime-name: "JavaEE.war")
+14:23:16,024 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 83) WFLYUT0021: Registered web context: '/JavaEE' for server 'default-server'
+14:23:16,034 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0016: Replaced deployment "JavaEE.war" with deployment "JavaEE.war"
+14:23:16,034 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0002: Content removed from location C:\wildfly-19.0.0.Beta3\standalone\data\content\da\c954548fdf5fa59fadcaf0756e721a5249e971\content
