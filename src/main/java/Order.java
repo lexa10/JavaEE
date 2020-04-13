@@ -26,6 +26,7 @@ public class Order implements Servlet, Serializable {
         logger.info("New request");
 
         res.getWriter().println("<h1 align=\"center\" style=\"color:#0000ff; font-size:30px\">ЗАКАЗ ТОВАРА<h2 align=\"center\" >(КУПИТЬ ТОВАР)!!!</h2></h1>");
+        req.getServletContext().getRequestDispatcher("/WEB-INF/order.jsp").forward(req,res);
     }
 
     @Override

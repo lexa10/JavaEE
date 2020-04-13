@@ -19,7 +19,6 @@ private transient FilterConfig filterConfig;
         response.setCharacterEncoding("UTF-8");
         response.setContentType("text/html");
 
-
         response.getWriter().println();
         chain.doFilter(request, response);
         response.getWriter().println();

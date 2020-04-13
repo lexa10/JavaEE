@@ -26,6 +26,7 @@ public class Product implements Servlet, Serializable {
         logger.info("New request");
 
         res.getWriter().println("<h1 align=\"center\" style=\"color:#0000ff; font-size:30px\">ТОВАРЫ</h1> <h2 align=\"center\" >(БЫТОВАЯ ТЕХНИКА ДЛЯ ДОМА)</h2> <h2 align=\"center\" > УТЮГ </h2>");
+        req.getServletContext().getRequestDispatcher("/WEB-INF/product.jsp").forward(req,res);
     }
 
     @Override
