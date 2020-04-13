@@ -26,6 +26,7 @@ public class Main implements Servlet, Serializable {
             logger.info("New request");
 
             res.getWriter().println("<h1 align=\"center\" style=\"color:#0000ff; font-size:30px\">Добро пожаловать на главную страницу!!!</h1>");
+        req.getServletContext().getRequestDispatcher("/WEB-INF/main.jsp").forward(req,res);
     }
 
     @Override

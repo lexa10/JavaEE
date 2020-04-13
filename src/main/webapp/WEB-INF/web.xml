@@ -49,7 +49,6 @@
   <servlet>
     <servlet-name>Cart</servlet-name>
     <servlet-class>Cart</servlet-class>
-
   </servlet>
   <servlet-mapping>
     <servlet-name>Cart</servlet-name>
@@ -68,12 +67,12 @@
 
   <error-page>
     <error-code>403</error-code>
-    <location>/403.html</location>
+    <location>/WEB-INF/403.html</location>
   </error-page>
 
   <error-page>
     <error-code>404</error-code>
-    <location>/404.html</location>
+    <location>/WEB-INF/404.html</location>
   </error-page>
 
   <error-page>

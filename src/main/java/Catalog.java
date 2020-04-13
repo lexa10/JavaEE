@@ -26,6 +26,7 @@ import java.io.Serializable;
             logger.info("New request");
 
             res.getWriter().println("<h1 align=\"center\" style=\"color:#0000ff; font-size:30px\">ТОВАРЫ<h2 align=\"center\" >(ШИРОКИЙ АССОРТИМЕНТ)!!!</h2></h1>");
+            req.getServletContext().getRequestDispatcher("/WEB-INF/catalog.jsp").forward(req,res);
         }
 
         @Override
