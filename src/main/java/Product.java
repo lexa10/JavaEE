@@ -1,44 +1,54 @@
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import java.math.BigDecimal;
 
-import javax.servlet.*;
-import java.io.IOException;
-import java.io.Serializable;
+public class Product {
 
-public class Product implements Servlet, Serializable {
+    private Long id;
 
-    private Logger logger = LoggerFactory.getLogger(Product.class);
-    private  transient ServletConfig config;
+    private String name;
 
+    private String description;
 
-    @Override
-    public void init(ServletConfig servletConfig) throws ServletException {
-        this.config = config;
+    private BigDecimal price;
+
+    public Product() {
     }
 
-    @Override
-    public ServletConfig getServletConfig() {
-        return this.config;
+    public Product(Long id, String name, String description, BigDecimal price) {
+        this.id = id;
+        this.name = name;
+        this.description = description;
+        this.price = price;
     }
 
-    @Override
-    public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException {
-        logger.info("New request");
-
-        res.getWriter().println("<h1 align=\"center\" style=\"color:#0000ff; font-size:30px\">ТОВАРЫ</h1> <h2 align=\"center\" >(БЫТОВАЯ ТЕХНИКА ДЛЯ ДОМА)</h2> <h2 align=\"center\" > УТЮГ </h2>");
-        req.getServletContext().getRequestDispatcher("/WEB-INF/product.jsp").forward(req,res);
+    public Long getId() {
+        return id;
     }
 
-    @Override
-    public String getServletInfo() {
-        return "Купить...";
+    public void setId(Long id) {
+        this.id = id;
     }
 
-    @Override
-    public void destroy() {
-        logger.info("Product class destroy");
+    public String getName() {
+        return name;
+    }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public BigDecimal getPrice() {
+        return price;
+    }
+
+    public void setPrice(BigDecimal price) {
+        this.price = price;
     }
 }
-
-

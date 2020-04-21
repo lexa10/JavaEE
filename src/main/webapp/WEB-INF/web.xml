@@ -6,6 +6,10 @@
 
   <display-name>Archetype Created Web Application</display-name>
 
+  <welcome-file-list>
+    <welcome-file>index.xhtml</welcome-file>
+  </welcome-file-list>
+
   <servlet>
     <servlet-name>FirstServlet</servlet-name>
     <servlet-class>FirstServlet</servlet-class>
@@ -65,7 +69,22 @@
     <url-pattern>/order</url-pattern>
   </servlet-mapping>
 
+  <servlet>
+    <servlet-name>faces-servlet</servlet-name>
+    <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>faces-servlet</servlet-name>
+    <url-pattern>*.xhtml</url-pattern>
+  </servlet-mapping>
   <error-page>
+
+    <welcome-file-list>
+      <welcome-file>index.xhtml</welcome-file>
+    </welcome-file-list>
+
     <error-code>403</error-code>
     <location>/WEB-INF/403.html</location>
   </error-page>
@@ -79,7 +98,6 @@
     <exception-type>java.lang.Throwable</exception-type>
     <location>/error.jsp</location>
   </error-page>
-
 
   <filter>
     <filter-name>HttpFilter</filter-name>
