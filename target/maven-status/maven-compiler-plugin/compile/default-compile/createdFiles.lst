@@ -1,7 +1,10 @@
 Product.class
+ProductController.class
 Main.class
 Catalog.class
+ProductRepository.class
 FirstServlet.class
 Order.class
 Cart.class
+DataSource.class
 HttpFilter.class

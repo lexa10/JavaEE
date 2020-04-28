@@ -32,7 +32,7 @@
 
   <servlet>
     <servlet-name>Catalog</servlet-name>
-    <servlet-class>Catalog</servlet-class>
+    <servlet-clasc>Catalog</servlet-clasc>
 
   </servlet>
   <servlet-mapping>
@@ -55,6 +55,7 @@
     <servlet-class>Cart</servlet-class>
   </servlet>
   <servlet-mapping>
+
     <servlet-name>Cart</servlet-name>
     <url-pattern>/cart</url-pattern>
   </servlet-mapping>
@@ -113,8 +114,8 @@
     <filter-name>HttpFilter</filter-name>
     <filter-class>HttpFilter</filter-class>
     <init-param>
-    <param-name>requestEncoding</param-name>
-    <param-value>UTF-8</param-value>
+      <param-name>requestEncoding</param-name>
+      <param-value>UTF-8</param-value>
     </init-param>
   </filter>
 
@@ -125,7 +126,3 @@
   </filter-mapping>
 
 </web-app>
-
-
-
-
