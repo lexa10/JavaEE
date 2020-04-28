@@ -1,14 +1,29 @@
+import javax.inject.Named;
+import javax.persistence.*;
+import java.io.Serializable;
 import java.math.BigDecimal;
 
-public class Product {
+@Entity
+@Table(name = "products")
+@NamedQuery(name = "Product.findAll", query = "SELECT p FROM Product p")
+public class Product implements Serializable {
 
+    public static String count;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column
     private String name;
 
+    @Column
     private String description;
 
+    @Column
     private BigDecimal price;
+
+    @ManyToOne
+    private Category category;
 
     public Product() {
     }
@@ -51,4 +66,5 @@ public class Product {
     public void setPrice(BigDecimal price) {
         this.price = price;
     }
+
 }
