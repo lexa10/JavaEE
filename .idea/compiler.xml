@@ -10,5 +10,8 @@
         <module name="GbJavaEeWebApp" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="jws-client" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
