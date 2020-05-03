@@ -2,18 +2,15 @@
 import com.sun.istack.internal.NotNull;
 
 import javax.persistence.*;
-import java.io.Serializable;
 import java.util.List;
 
 @Entity
-@Table(name = "Category")
-public class Category implements Serializable {
+public class Category {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column
     private String name;
 
     @OneToMany(
