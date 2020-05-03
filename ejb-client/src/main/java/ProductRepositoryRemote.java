@@ -1,7 +1,8 @@
+import javax.ejb.Remote;
 import java.math.BigDecimal;
 
-public class Product {
-
+@Remote
+public class ProductRepositoryRemote {
     private Long id;
 
     private String name;
@@ -10,10 +11,10 @@ public class Product {
 
     private BigDecimal price;
 
-    public Product() {
+    public ProductRepositoryRemote() {
     }
 
-    public Product(Long id, String name, String description, BigDecimal price) {
+    public ProductRepositoryRemote(Long id, String name, String description, BigDecimal price) {
         this.id = id;
         this.name = name;
         this.description = description;
@@ -52,3 +53,4 @@ public class Product {
         this.price = price;
     }
 }
+

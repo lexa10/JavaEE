@@ -1,42 +1,51 @@
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import javax.ejb.Stateless;
+import javax.ejb.TransactionAttribute;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 import javax.servlet.*;
 import java.io.IOException;
 import java.io.Serializable;
+import java.util.List;
 
-    public class Catalog implements Servlet, Serializable {
+@Stateless
+    public class Catalog implements CatalogService {
 
-        private Logger logger = LoggerFactory.getLogger(Catalog.class);
-        private  transient ServletConfig config;
+    private static final Logger logger = LoggerFactory.getLogger(ProductRepository.class);
 
+    @PersistenceContext(unitName = "ds")
+    private EntityManager em;
 
-        @Override
-        public void init(ServletConfig servletConfig) throws ServletException {
-            this.config = config;
-        }
+    @Override
+    @TransactionAttribute
+    public void insert(Product product) {
+        em.persist(product);
+    }
 
-        @Override
-        public ServletConfig getServletConfig() {
-            return this.config;
-        }
+    @Override
+    @TransactionAttribute
+    public void update(Product product) {
+        em.merge(product);
+    }
 
-        @Override
-        public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException {
-            logger.info("New request");
-
-            res.getWriter().println("<h1 align=\"center\" style=\"color:#0000ff; font-size:30px\">ТОВАРЫ<h2 align=\"center\" >(ШИРОКИЙ АССОРТИМЕНТ)!!!</h2></h1>");
-            req.getServletContext().getRequestDispatcher("/WEB-INF/catalog.jsp").forward(req,res);
-        }
-
-        @Override
-        public String getServletInfo() {
-            return "Выбор широк...";
-        }
-
-        @Override
-        public void destroy() {
-            logger.info("Catalog class destroy");
-
+    @Override
+    @TransactionAttribute
+    public void delete(long id) {
+        Product product = em.find(Product.class, id);
+        if (product != null) {
+            em.remove(product);
         }
     }
+
+    @Override
+    public Product findById(long id) {
+        return em.find(Product.class, id);
+    }
+
+    @Override
+    public List<Product> findAll() {
+        return em.createQuery("from Product", Product.class).getResultList();
+    }
+}
