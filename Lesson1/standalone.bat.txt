@@ -1,0 +1,144 @@
+Microsoft Windows [Version 10.0.18363.836]
+(c) Корпорация Майкрософт (Microsoft Corporation), 2019. Все права защищены.
+
+C:\Users\adida_7sfihp9>cd C:\wildfly-19.0.0.Beta3\bin
+
+C:\wildfly-19.0.0.Beta3\bin>standalone.bat
+Calling "C:\wildfly-19.0.0.Beta3\bin\standalone.conf.bat"
+JAVA_HOME is not set. Unexpected results may occur.
+Set JAVA_HOME to the directory of your local JDK to avoid this message.
+===============================================================================
+
+  JBoss Bootstrap Environment
+
+  JBOSS_HOME: "C:\wildfly-19.0.0.Beta3"
+
+  JAVA: "java"
+
+  JAVA_OPTS: "-Dprogram.name=standalone.bat -Xms64M -Xmx512M -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman "
+
+===============================================================================
+
+21:17:50,598 INFO  [org.jboss.modules] (main) JBoss Modules version 1.10.0.Final
+21:17:56,141 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.11.Final
+21:17:56,161 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.3.Final
+21:17:56,277 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 19.0.0.Beta3 (WildFly Core 11.0.0.Beta10) starting
+21:18:01,658 INFO  [org.wildfly.security] (ServerService Thread Pool -- 28) ELY00001: WildFly Elytron version 1.11.2.Final
+21:18:05,898 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+21:18:05,929 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 18) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+21:18:06,083 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+21:18:06,138 INFO  [org.xnio] (MSC service thread 1-7) XNIO version 3.7.7.Final
+21:18:06,138 INFO  [org.xnio.nio] (MSC service thread 1-7) XNIO NIO Implementation Version 3.7.7.Final
+21:18:06,199 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 52) WFLYCLINF0001: Activating Infinispan subsystem.
+21:18:06,214 INFO  [org.wildfly.extension.microprofile.config.smallrye._private] (ServerService Thread Pool -- 61) WFLYCONF0001: Activating WildFly MicroProfile Config Subsystem
+21:18:06,214 INFO  [org.wildfly.extension.microprofile.jwt.smallrye._private] (ServerService Thread Pool -- 63) WFLYJWT0001: Activating WildFly MicroProfile JWT Subsystem
+21:18:06,214 INFO  [org.wildfly.extension.microprofile.health.smallrye] (ServerService Thread Pool -- 62) WFLYHEALTH0001: Activating Eclipse MicroProfile Health Subsystem
+21:18:06,214 INFO  [org.wildfly.extension.microprofile.metrics.smallrye] (ServerService Thread Pool -- 64) WFLYMETRICS0001: Activating Eclipse MicroProfile Metrics Subsystem
+21:18:06,230 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 65) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+21:18:06,230 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 74) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+21:18:06,230 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 59) WFLYJSF0007: Activated the following JSF Implementations: [main]
+21:18:06,246 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 76) WFLYWS0002: Activating WebServices Extension
+21:18:06,252 INFO  [org.jboss.as.connector] (MSC service thread 1-6) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.20.Final)
+21:18:06,399 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 66) WFLYNAM0001: Activating Naming Subsystem
+21:18:06,615 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0003: Undertow 2.0.29.Final starting
+21:18:06,756 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 72) WFLYSEC0002: Activating Security Subsystem
+21:18:06,756 INFO  [org.jboss.as.security] (MSC service thread 1-1) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+21:18:07,308 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 75) WFLYUT0014: Creating file handler for path 'C:\wildfly-19.0.0.Beta3/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+21:18:07,493 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 44) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+21:18:07,493 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0018: Started Driver service with driver-name = h2
+21:18:07,624 INFO  [org.jboss.as.naming] (MSC service thread 1-6) WFLYNAM0003: Starting Naming Service
+21:18:07,624 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-2) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+21:18:07,662 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 54) WFLYRS0016: RESTEasy version 3.11.0.Final
+21:18:07,825 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 53) WFLYIO001: Worker 'default' has auto-configured to 32 IO threads with 256 max task threads based on your 16 available processors
+21:18:07,825 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 256 (per class), which is derived from thread worker pool sizing.
+21:18:07,825 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 64 (per class), which is derived from the number of CPUs on this host.
+21:18:07,925 INFO  [org.jboss.remoting] (MSC service thread 1-1) JBoss Remoting version 5.0.17.Final
+21:18:07,947 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0493: EJB subsystem suspension complete
+21:18:08,025 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0012: Started server default-server.
+21:18:08,041 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0018: Host default-host starting
+21:18:08,041 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+21:18:08,094 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+21:18:13,408 INFO  [org.jboss.as.patching] (MSC service thread 1-4) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+21:18:13,428 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-7) WFLYDM0111: Keystore C:\wildfly-19.0.0.Beta3\standalone\configuration\application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+21:18:13,444 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-5) WFLYDS0013: Started FileSystemDeploymentService for directory C:\wildfly-19.0.0.Beta3\standalone\deployments
+21:18:13,444 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "JspWebApp.war" (runtime-name: "JspWebApp.war")
+21:18:13,444 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "JavaEE.war" (runtime-name: "JavaEE.war")
+21:18:14,110 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+21:18:15,952 INFO  [org.jboss.ws.common.management] (MSC service thread 1-6) JBWS022052: Starting JBossWS 5.4.1.Final (Apache CXF 3.3.5)
+21:18:18,012 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-6) ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.18.Final
+21:18:18,255 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0005: Deploying non-JDBC-compliant driver class com.mysql.cj.jdbc.Driver (version 8.0)
+21:18:18,346 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0018: Started Driver service with driver-name = JspWebApp.war_com.mysql.cj.jdbc.Driver_8_0
+21:18:18,555 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 79) WFLYCLINF0002: Started client-mappings cache from ejb container
+21:18:18,696 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 85) WFLYUT0021: Registered web context: '/JavaEE' for server 'default-server'
+21:18:20,778 ERROR [ru.geekbrains.listener.AppListener] (ServerService Thread Pool -- 80) : com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+        at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+        at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+        at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+        at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+        at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+        at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+        at java.sql.DriverManager.getConnection(Unknown Source)
+        at java.sql.DriverManager.getConnection(Unknown Source)
+        at ru.geekbrains.listener.AppListener.contextInitialized(AppListener.java:31)
+        at io.undertow.servlet.core.ApplicationListeners.contextInitialized(ApplicationListeners.java:187)
+        at io.undertow.servlet.core.DeploymentManagerImpl$1.call(DeploymentManagerImpl.java:217)
+        at io.undertow.servlet.core.DeploymentManagerImpl$1.call(DeploymentManagerImpl.java:186)
+        at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:42)
+        at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+        at org.wildfly.extension.undertow.security.SecurityContextThreadSetupAction.lambda$create$0(SecurityContextThreadSetupAction.java:105)
+        at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1541)
+        at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1541)
+        at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1541)
+        at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1541)
+        at io.undertow.servlet.core.DeploymentManagerImpl.deploy(DeploymentManagerImpl.java:252)
+        at org.wildfly.extension.undertow.deployment.UndertowDeploymentService.startContext(UndertowDeploymentService.java:96)
+        at org.wildfly.extension.undertow.deployment.UndertowDeploymentService$1.run(UndertowDeploymentService.java:78)
+        at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+        at java.util.concurrent.FutureTask.run(Unknown Source)
+        at org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+        at org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1982)
+        at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+        at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+        at java.lang.Thread.run(Unknown Source)
+        at org.jboss.threads.JBossThread.run(JBossThread.java:485)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+        at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+        at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+        at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+        at java.lang.reflect.Constructor.newInstance(Unknown Source)
+        at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+        at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+        at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+        at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+        at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91)
+        at com.mysql.cj.NativeSession.connect(NativeSession.java:144)
+        at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:956)
+        at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:826)
+        ... 27 more
+Caused by: java.net.ConnectException: Connection refused: connect
+        at java.net.TwoStacksPlainSocketImpl.socketConnect(Native Method)
+        at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+        at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+        at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+        at java.net.PlainSocketImpl.connect(Unknown Source)
+        at java.net.SocksSocketImpl.connect(Unknown Source)
+        at java.net.Socket.connect(Unknown Source)
+        at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
+        at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65)
+        ... 30 more
+
+21:18:20,784 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 80) WFLYUT0021: Registered web context: '/JspWebApp' for server 'default-server'
+21:18:20,982 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0010: Deployed "JavaEE.war" (runtime-name : "JavaEE.war")
+21:18:20,982 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0010: Deployed "JspWebApp.war" (runtime-name : "JspWebApp.war")
+21:18:22,682 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+21:18:22,682 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+21:18:22,682 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+21:18:22,682 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 19.0.0.Beta3 (WildFly Core 11.0.0.Beta10) started in 37972ms - Started 527 of 757 services (384 services are lazy, passive or on-demand)
+21:20:50,799 INFO  [org.jboss.as.repository] (management-handler-thread - 1) WFLYDR0001: Content added at location C:\wildfly-19.0.0.Beta3\standalone\data\content\6b\16baa2eda160c76b423e4c2b6f79c84fb1fec5\content
+21:20:50,799 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "Lesson1.war" (runtime-name: "Lesson1.war")
+21:20:50,884 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 88) WFLYUT0021: Registered web context: '/Lesson1' for server 'default-server'
+21:20:50,953 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "Lesson1.war" (runtime-name : "Lesson1.war")
