@@ -5,6 +5,7 @@ import javax.servlet.*;
 import java.io.IOException;
 import java.io.Serializable;
 
+
 public class Order implements Servlet, Serializable {
 
     private Logger logger = LoggerFactory.getLogger(Order.class);
@@ -38,6 +39,9 @@ public class Order implements Servlet, Serializable {
     public void destroy() {
         logger.info("Order class destroy");
 
+    }
+
+    public void setName(String newName) {
     }
 }
 
