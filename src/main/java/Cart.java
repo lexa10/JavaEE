@@ -1,13 +1,13 @@
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.ejb.Stateful;
+import javax.persistence.Entity;
 import javax.servlet.*;
 import java.io.IOException;
 import java.io.Serializable;
 
 
-@Stateful
+@Entity
 public class Cart  implements Servlet, Serializable {
 
     private Logger logger = LoggerFactory.getLogger(Cart.class);
@@ -41,5 +41,8 @@ public class Cart  implements Servlet, Serializable {
     public void destroy() {
         logger.info("Catalog class destroy");
 
+    }
+
+    public void setName(String молочные_продукты) {
     }
 }
